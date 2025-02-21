@@ -34,6 +34,7 @@ console.log(booleanIsLoggedIn)
 "Tejas" => true
 */
 
+/*
 let someNumber = 33;
 
 console.log(typeof someNumber)
@@ -41,3 +42,34 @@ console.log(typeof someNumber)
 let isReallyConvertToString = String(someNumber)
 
 console.log(typeof isReallyConvertToString)
+
+*/
+
+/* ******************OPERATIONS ***************** */
+/*
+console.log(1 + 2)    // 3
+console.log("1" + 2); // 12
+console.log(2 + "1"); // 21
+console.log("2" + 1 + 2) // 212
+console.log(2 + 1 + "2");  //32
+*/
+
+
+// pre increment
+
+let marks = 12;
+
+let increaseMarks = ++marks
+
+console.log(increaseMarks);
+console.log(marks) 
+
+// Post increment
+
+let score = 12;
+
+let increaseScore = score++
+
+console.log(increaseScore);
+console.log(score) 
+ 
