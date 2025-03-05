@@ -65,3 +65,11 @@ console.log(myArray.splice(1,3))
 console.log("is splice change original array? Yes", myArray)
 
 
+/********* Spread Operator *********/
+
+const array1 = [1,2,3,4,5]
+const array2 = [6,7,8,9,10]
+
+const finalArray = [...array1, ...array2]
+
+console.log(finalArray)
