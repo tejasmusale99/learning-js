@@ -9,4 +9,15 @@
 
 ((name) => {
     console.log(`DB2 connected to this username ${name}`);  
-})("tejas")
+})("tejas");
+
+const result = ((num1, num2)=>{
+    console.log("Hello Tejas")
+    return num1 + num2;
+   
+})(10, 10);
+
+console.log(result)
+
+
+
