@@ -28,6 +28,7 @@ const myObject = {
 }
 
 /********* yaha pe forOf loop kam nhi krega (we get myObject is not iterable error)*******/
+
 // for(const [key,value] of myObject){
 // console.log(key, value)
 // }
