@@ -13,44 +13,45 @@
       <div class="day">Thursday</div>
     </div>
 
-    <script>
+    
+  </body>
+  <script>
 
-        // because hme ye multiple value deta hai in the form of array we can use forEach loop here 
+    // because hme ye multiple value deta hai in the form of array we can use forEach loop here 
 
-        const nodeList = document.querySelectorAll(".day")
-        console.log(nodeList)
+    const nodeList = document.querySelectorAll(".day")
+    console.log(nodeList)
 
 // yaha pe hme array ke form me milta hai but yaha forEach allow nhi because ye hme HTMLCollection deta hai
 
-        const HtmlElement = document.getElementsByClassName('day')
-        console.log(HtmlElement)
+    const HtmlElement = document.getElementsByClassName('day')
+    console.log(HtmlElement)
 
-        // how to convert html collection to array 
+    // how to convert html collection to array 
 
-       const newArrayFormat = Array.from(HtmlElement)
+   const newArrayFormat = Array.from(HtmlElement)
 
-        newArrayFormat.forEach(function(item){
-            console.log(item.style.color = 'orange')
-        })
-        
-        // we cannot use forEach in HTMLcollection but we can use for loop anywhere
+    newArrayFormat.forEach(function(item){
+        console.log(item.style.color = 'orange')
+    })
+    
+    // we cannot use forEach in HTMLcollection but we can use for loop anywhere
 
-        const myElements = document.querySelector(".parent")
-        console.log(myElements.children);
+    const myElements = document.querySelector(".parent")
+    console.log(myElements.children);
 
-        for(let i = 0; i < myElements.children.length; i++){
-            myElements.children[i].style.backgroundColor = "white"
-        }
+    for(let i = 0; i < myElements.children.length; i++){
+        myElements.children[i].style.backgroundColor = "white"
+    }
 
-        myElements.children[1].style.color = "green"
+    myElements.children[1].style.color = "green"
 
-        // console.log(myElements.firstElementChild)
-        // console.log(myElements.lastElementChild)
+    // console.log(myElements.firstElementChild)
+    // console.log(myElements.lastElementChild)
 
-        let dayOne =  document.querySelector('.day')
-        // console.log(dayOne);
-        console.log(dayOne.nextSibling);
-        
-    </script>
-  </body>
+    let dayOne =  document.querySelector('.day')
+    // console.log(dayOne);
+    console.log(dayOne.nextSibling);
+    
+</script>
 </html>
