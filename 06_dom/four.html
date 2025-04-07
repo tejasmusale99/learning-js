@@ -11,20 +11,13 @@
     </ul>
 </body>
 <script>
-    // function addLanguage(langName){
-    //   const createListElement =  document.createElement('li');
-    //   createListElement.innerText = `${langName}`
-    //   document.querySelector(".language").appendChild(createListElement)
-    //   createListElement.style.color = "orange"
-    // }
-    // addLanguage("tejas")
-
-    const createElementTest = document.createElement("li");
-
-    console.log(createElementTest)
-    createElementTest.innerText = "Test";
-    document.querySelector('.language').appendChild(createElementTest)
-    createElementTest.style.color = "red"
+    function addLanguage(langName){
+      const createListElement =  document.createElement('li');
+      createListElement.innerText = `${langName}`
+      document.querySelector(".language").appendChild(createListElement)
+      createListElement.style.color = "orange"
+    }
+    addLanguage("tejas") 
     
 </script>
 </html>
