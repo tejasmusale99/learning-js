@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:black;
+    color: white;
+    width: 1400px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+form{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding:40px;
+}
+input{
+    padding: 5px;
+}
+button{
+    padding: 5px;
+}
+.result{
+    color: aliceblue;
+}
+.weight_guide{
+    color: white;
+}
+p{
+    color: rgb(255, 255, 255);
+}
