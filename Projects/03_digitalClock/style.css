@@ -31,4 +31,10 @@ body {
     background-color: chocolate;
     width: 450px;
     height: 180px;
+    color: rgb(230, 209, 209);
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
   }
