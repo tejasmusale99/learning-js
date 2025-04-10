@@ -17,13 +17,13 @@ form.addEventListener("submit", function (e) {
   }else {
     const bmi = (weight / ((height / 100) ** 2)).toFixed(2);
 
-    if(bmi < 18.6){
-        info.innerHTML = `<h1> ${bmi}  kg/m2 Under Weight</h1>`;   
-    }else if(bmi >= 18.6 || resultInfo < 24.9){
-        info.innerHTML = `<h1>${bmi}  kg/m2 Normal Range</h1>`;
-    }else if(bmi >= 24.9){
-        info.innerHTML = `<h1>${bmi} kg/m2 Overweight</h1>`; 
-    }
+    if (bmi < 18.6) {
+        info.innerHTML = `<h1>${bmi} kg/m² - Underweight</h1>`;
+      } else if (bmi >= 18.6 && bmi < 24.9) {
+        info.innerHTML = `<h1>${bmi} kg/m² - Normal Range</h1>`;
+      } else {
+        info.innerHTML = `<h1>${bmi} kg/m² - Overweight</h1>`;
+      }
   }
 });
 
