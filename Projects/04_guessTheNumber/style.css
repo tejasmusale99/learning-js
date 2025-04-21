@@ -19,7 +19,9 @@
     min-height: 100vh; /* Full screen height */
     padding: 1rem; /* Padding for mobile view */
   }
-  
+  p{
+    margin: 5px 0px;
+  }
   /* Container for content */
   .container {
     max-width: 600px;
@@ -40,7 +42,7 @@
     border-radius: 5px;
   }
   
-  #button {
+  #submt_button {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     background-color: #fff;
@@ -48,6 +50,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin: 20px 0px;
   }
   
   button:hover {
