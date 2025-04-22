@@ -4,7 +4,7 @@ const userGuess = document.querySelector("#input_guess");
 const PrevUserGuess = document.querySelector("#previous_guesses");
 const RemainingGuess = document.querySelector("#remaining_guesses");
 const lowOrHi = document.querySelector("#lowOrHigh");
-const startOver = document.querySelector("#result");
+const startOver = document.querySelector(".result");
 
 const p = document.createElement("p");
 
@@ -57,7 +57,7 @@ function displayGuess(guess) {
   userGuess.value = "";
   PrevUserGuess.innerHTML += ` ${guess},   `;
   numGuess++;
-  RemainingGuess.innerHTML = `${11 - numGuess}`;
+  RemainingGuess.innerHTML = `Guesses Remaining: ${11 - numGuess}`;
 }
 
 function displayMessage(message) {
@@ -67,7 +67,7 @@ function displayMessage(message) {
 function endGame() {
   userGuess.value = "";
   userGuess.setAttribute("disabled", "");
-  p.classList.add("button");
+  p.classList.add("startOverButton");
   p.innerHTML = `<h2 id="newGame">start new game</h2>`;
   startOver.appendChild(p);
   playGame = false;
@@ -81,7 +81,7 @@ function newGame() {
     prevGuess = []
     numGuess = 1
     PrevUserGuess.innerHTML ='' 
-    RemainingGuess.innerHTML = `${11 - numGuess}`;
+    RemainingGuess.innerHTML =`Guesses Remaining  ${11 - numGuess}`;
     userGuess.removeAttribute('disabled')
     startOver.removeChild(p)
     playGame = true;
