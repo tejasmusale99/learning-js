@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// fetch using async await 
+
+// const getData = async () => {
+//   try {
+//     let response = await fetch("https://api.github.com/users/tejasmusale");
+//     console.log("Status:", response.status); 
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (err) {
+//     console.error("Error fetching data:", err.message);
+//   }
+// };
+
+// getData();
+
+// fetch with promise .then 
+
+fetch("https://api.github.com/users/tejasmusale")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+
+    </script>
+</body>
+</html>
