@@ -1,3 +1,4 @@
+
 // const newPromise = new Promise(function(resolve,rej){
 //     setTimeout(function(){
 //         console.log("async task")
@@ -39,4 +40,7 @@ console.log(err);
 }
 
 consumeThreePromise()
+
+
+
 
